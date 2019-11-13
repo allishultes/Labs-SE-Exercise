@@ -16,7 +16,7 @@ POST `/reversion`
 
 An example post request body can be found in `/examples`. 
 
-Further documentation on API integration is available: 
+Further documentation on API integration is available: https://github.com/allishultes/Labs-SE-Exercise/wiki/Api-Integration.
 
 ### Testing
 To test the code locally:
