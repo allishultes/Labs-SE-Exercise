@@ -3,7 +3,7 @@ const app = express();
 const bodyparser = require("body-parser");
 const reversionScript = require("./reversion.js");
 
-const port = process.env.PORT || 8080;
+const port = 8080;
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
@@ -18,12 +18,9 @@ app.post("/reversion", async (req, res) => {
     const script = req.body;
     try {
         const response = await reversionScript.reversionScript(script);
-
-
         res.status(200).json({
             response,
         })
-
     }
     catch(e) {
         throw e;
