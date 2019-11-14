@@ -1,0 +1,29 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-console": "error",
+    "no-param-reassign": 0,
+    "max-len": ["warn", 130],
+    "mocha/no-exclusive-tests": "error",
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "__file"
+        ]
+      }
+    ]
+  },
+  "plugins": [
+    "mocha"
+  ],
+  "globals": {
+    "fail": true
+  }
+}
